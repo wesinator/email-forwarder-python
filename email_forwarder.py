@@ -19,7 +19,7 @@ class EmailForwarder:
         message.replace_header("To", recipient)
         message.replace_header("Subject", "Fwd: " + message["subject"])
 
-        #header = 'To:' + recipient + '\r\n' + 'From: ' + self.email_address + '\n' + 'Subject:' + "Fwd: " + message["subject"] + '\r\n'
+        #header = 'To:' + recipient + '\r\n' + 'From: ' + self.email_address + '\r\n' + 'Subject:' + "Fwd: " + message["subject"] + '\r\n'
 
         # open authenticated SMTP connection and send message with
         # specified envelope from and to addresses
